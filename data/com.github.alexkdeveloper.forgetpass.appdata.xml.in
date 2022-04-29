@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop">
+	<id>com.github.alexkdeveloper.forgetpass</id>
+	<metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-3.0+</project_license>
+  <name>Forgetpass</name>
+  <summary>Simple password generator</summary>
+  <description>
+    <p>You don't need to remember passwords anymore! All you need is a website name and a keyword that is easy to remember. The program will generate a strong password, and if you need it again, just enter the above data and you will get the same password.</p>
+  </description>
+  <provides>
+    <binary>com.github.alexkdeveloper.forgetpass</binary>
+  </provides>
+  <developer_name>Alex Kryuchkov</developer_name>
+  <url type="homepage">http://github.com/alexkdeveloper/forgetpass</url>
+  <url type="bugtracker">http://github.com/alexkdeveloper/forgetpass/issues</url>
+  <url type="help">http://github.com/alexkdeveloper/forgetpass/issues</url>
+  <url type="donation">https://www.blockchain.com/btc/address/bc1ql3ga4w9jtmxfe3pt8vfzydfd3zfpzks8hu5qfu</url>
+  <screenshots>
+    <screenshot type="default">
+    <image>https://raw.githubusercontent.com/alexkdeveloper/forgetpass/main/data/screenshot.png</image>
+    </screenshot>
+  </screenshots>
+  <content_rating type="oars-1.1"/>
+  <releases>
+    <release version="1.0.0" date="2022-04-29">
+          <description>
+		  <ul>
+            <li>Initial release</li>
+		  </ul>
+          </description>
+        </release>
+  </releases>
+</component>

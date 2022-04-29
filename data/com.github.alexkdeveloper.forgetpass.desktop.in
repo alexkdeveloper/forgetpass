@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Forgetpass
+Comment=Simple password generator
+Exec=com.github.alexkdeveloper.forgetpass
+Icon=com.github.alexkdeveloper.forgetpass
+Terminal=false
+Type=Application
+Categories=GTK;Security;
+StartupNotify=true
+Keywords=password;generator;security;keyword;
