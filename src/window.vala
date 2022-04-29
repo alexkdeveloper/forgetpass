@@ -40,6 +40,9 @@ namespace Forgetpass {
 
             generate_button.clicked.connect(on_generate);
 
+            var headerbar = new HeaderBar ();
+            set_titlebar(headerbar);
+
             var hbox_site = new Box (Orientation.HORIZONTAL, 5);
             hbox_site.append (entry_site);
             hbox_site.append (entry_site_tooltip_image);
