@@ -4,7 +4,7 @@
 	<metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-3.0+</project_license>
   <name>Forgetpass</name>
-  <summary>Simple password generator</summary>
+  <summary>Simple password generator for websites</summary>
   <description>
     <p>You don't need to remember passwords anymore! All you need is a website name and a keyword that is easy to remember. The program will generate a strong password, and if you need it again, just enter the above data and you will get the same password.</p>
   </description>
