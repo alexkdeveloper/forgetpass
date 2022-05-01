@@ -1,36 +1,35 @@
-# SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the forgetpass package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+# Heimen Stoffels <vistausss@fastmail.com>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: forgetpass\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-05-01 14:21+0200\n"
-"PO-Revision-Date: 2022-05-01 14:22+0200\n"
+"PO-Revision-Date: 2022-05-01 14:30+0200\n"
 "Last-Translator: Heimen Stoffels <vistausss@fastmail.com>\n"
-"Language-Team: \n"
-"Language: nl\n"
+"Language-Team: Dutch <kde-i18n-nl@kde.org>\n"
+"Language: nl_NL\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.0.1\n"
+"X-Generator: Lokalize 22.04.0\n"
 
 #: data/com.github.alexkdeveloper.forgetpass.desktop.in:3
 #: data/com.github.alexkdeveloper.forgetpass.appdata.xml.in:6
 msgid "Forgetpass"
-msgstr ""
+msgstr "Forgetpass"
 
 #: data/com.github.alexkdeveloper.forgetpass.desktop.in:4
 #: data/com.github.alexkdeveloper.forgetpass.appdata.xml.in:7
 msgid "Simple password generator for websites"
-msgstr ""
+msgstr "Eenvoudige wachtwoordgenerator voor websites"
 
 #: data/com.github.alexkdeveloper.forgetpass.desktop.in:11
 msgid "password;generator;security;keyword;"
-msgstr ""
+msgstr "wachtwoord;generator;beveiliging;trefwoord;"
 
 #: data/com.github.alexkdeveloper.forgetpass.appdata.xml.in:9
 msgid ""
@@ -39,7 +38,12 @@ msgid ""
 "password, and if you need it again, just enter the above data and you will "
 "get the same password."
 msgstr ""
+"U hoeft vanaf nu geen wachtwoorden meer te onthouden! Het enige wat u nodig"
+" heeft is de "
+"naam van een website en makkelijk te onthouden trefwoord. De toepassing"
+" genereert vervolgens "
+"een sterk wachtwoord dat u kunt opvragen middels het gekozen trefwoord."
 
 #: data/com.github.alexkdeveloper.forgetpass.appdata.xml.in:14
 msgid "Alex Kryuchkov"
-msgstr ""
+msgstr "Alex Kryuchkov"
