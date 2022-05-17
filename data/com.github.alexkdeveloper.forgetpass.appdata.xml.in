@@ -24,17 +24,17 @@
   <releases>
    <release version="1.0.1" date="2022-05-17">
       <description>
-		      <ul>
+	<ul>
             <li>Added Dutch translation</li>
-		      </ul>
-        </description>
-        </release>
+	</ul>
+     </description>
+    </release>
     <release version="1.0.0" date="2022-04-29">
       <description>
-		      <ul>
-            <li>Initial release</li>
-		      </ul>
-        </description>
-        </release>
+       <ul>
+          <li>Initial release</li>
+       </ul>
+     </description>
+  </release>
   </releases>
 </component>
