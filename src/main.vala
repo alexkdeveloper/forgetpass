@@ -1,5 +1,5 @@
 
-public class ForgetPass : Gtk.Application {
+public class ForgetPass : Adw.Application {
     public ForgetPass () {
         Object (
             application_id: "com.github.alexkdeveloper.forgetpass",

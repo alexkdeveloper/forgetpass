@@ -2,7 +2,7 @@
 using Gtk;
 
 namespace Forgetpass {
-	public class MainWindow : Gtk.ApplicationWindow {
+	public class MainWindow : Adw.ApplicationWindow {
         private PasswordEntry generated_pass;
         private PasswordEntry entry_key;
         private Entry entry_site;
@@ -10,6 +10,7 @@ namespace Forgetpass {
 			Object (application: app, title: "Forgetpass", default_height: 250, default_width: 300);
 		}
 		construct {
+            
 			var label_site = new Label("Site:") { 
                 halign = Gtk.Align.START 
             };
@@ -40,9 +41,6 @@ namespace Forgetpass {
 
             generate_button.clicked.connect(on_generate);
 
-            var headerbar = new HeaderBar ();
-            set_titlebar(headerbar);
-
             var hbox_site = new Box (Orientation.HORIZONTAL, 5);
             hbox_site.append (entry_site);
             hbox_site.append (entry_site_tooltip_image);
@@ -66,7 +64,13 @@ namespace Forgetpass {
             box.append(vbox_key);
             box.append(generate_button);
             box.append(generated_pass);
-            set_child(box);
+
+            var headerbar = new Adw.HeaderBar();
+
+            var main_box = new Box (Orientation.VERTICAL, 0);
+            main_box.append(headerbar);
+            main_box.append(box);
+            set_content(main_box);
 		}
 		
 		private void on_generate(){
