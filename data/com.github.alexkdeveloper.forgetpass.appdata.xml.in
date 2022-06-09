@@ -24,24 +24,24 @@
   <releases>
   <release version="1.0.3" date="2022-06-09">
       <description>
-	       <ul>
-            <li>Added Italian translation</li>
-	          <li>Added Russian translation</li>
-	       </ul>
+	 <ul>
+           <li>Added Italian translation</li>
+	   <li>Added Russian translation</li>
+	</ul>
      </description>
     </release>
   <release version="1.0.2" date="2022-06-08">
       <description>
-	       <ul>
+	  <ul>
             <li>Libadwaita is included in the application</li>
-	       </ul>
+	  </ul>
      </description>
     </release>
    <release version="1.0.1" date="2022-05-17">
       <description>
-	       <ul>
-            <li>Added Dutch translation</li>
-	       </ul>
+	<ul>
+           <li>Added Dutch translation</li>
+	</ul>
      </description>
     </release>
     <release version="1.0.0" date="2022-04-29">
