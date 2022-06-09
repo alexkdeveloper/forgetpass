@@ -18,6 +18,8 @@ forgetpass_deps = [
 gnome = import('gnome')
 
 executable('com.github.alexkdeveloper.forgetpass', forgetpass_sources,
-  vala_args: '--target-glib=2.50',  dependencies: forgetpass_deps,
+  include_directories: config_h_dir, 
+  vala_args: ['--target-glib=2.50', meson.source_root() + '/src/vapi/config.vapi'], 
+  c_args: ['-include', 'config.h'], dependencies: forgetpass_deps,
   install: true,
 )

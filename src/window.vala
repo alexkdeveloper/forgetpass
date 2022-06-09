@@ -6,12 +6,12 @@ namespace Forgetpass {
         private PasswordEntry generated_pass;
         private PasswordEntry entry_key;
         private Entry entry_site;
-		public MainWindow (Gtk.Application app) {
+		public MainWindow (Adw.Application app) {
 			Object (application: app, title: "Forgetpass", default_height: 250, default_width: 300);
 		}
 		construct {
             
-			var label_site = new Label("Site:") { 
+			var label_site = new Label(_("Site:")) { 
                 halign = Gtk.Align.START 
             };
             entry_site = new Entry() {
@@ -19,10 +19,10 @@ namespace Forgetpass {
             };
             var entry_site_tooltip_image = new Image.from_icon_name("dialog-information-symbolic") { 
                 halign = Gtk.Align.START, 
-                tooltip_text = "Use only the domain name without prefixes, such as http or www, and endings, such as .com, etc." 
+                tooltip_text = _("Use only the domain name without prefixes, such as http or www, and endings, such as .com, etc.") 
                 };
 
-            var label_key = new Label("Keyword:") { 
+            var label_key = new Label(_("Keyword:")) { 
                 halign = Gtk.Align.START 
             };
             entry_key = new PasswordEntry() { 
@@ -31,9 +31,9 @@ namespace Forgetpass {
             };
             var entry_key_tooltip_image = new Image.from_icon_name("dialog-information-symbolic") { 
                 halign = Gtk.Align.START, 
-                tooltip_text = "Be sure to remember the keyword! If you forget it, you won't be able to recover your password!" 
+                tooltip_text = _("Be sure to remember the keyword! If you forget it, you won't be able to recover your password!") 
                 };
-            var generate_button = new Button.with_label("GENERATE");
+            var generate_button = new Button.with_label(_("GENERATE"));
             generated_pass = new PasswordEntry() { 
                 show_peek_icon = true,
                 editable = false
@@ -75,19 +75,19 @@ namespace Forgetpass {
 		
 		private void on_generate(){
             if(is_empty(entry_site.text)){
-                alert("Enter the name of the site");
+                alert(_("Enter the name of the site"));
                 entry_site.grab_focus();
                 return;
             }
             if(is_empty(entry_key.text)){
-                alert("Enter a keyword");
+                alert(_("Enter a keyword"));
                 entry_key.grab_focus();
                 return;
             }
 		    try {
                   generated_pass.text = Crypto.derive_password(entry_key.text.strip(), entry_site.text.down().strip());
                 } catch (CryptoError error) {
-                    alert("ERROR!!!\nFailed to generate password");
+                    alert(_("ERROR!!!\nFailed to generate password"));
                 }
 		}
 
@@ -97,7 +97,7 @@ namespace Forgetpass {
 
 		private void alert (string str){
           var dialog_alert = new Gtk.MessageDialog(this, Gtk.DialogFlags.MODAL, Gtk.MessageType.INFO, Gtk.ButtonsType.OK, str);
-          dialog_alert.set_title("Message");
+          dialog_alert.set_title(_("Message"));
           dialog_alert.response.connect((_) => { dialog_alert.close(); });
           dialog_alert.show();
        }
