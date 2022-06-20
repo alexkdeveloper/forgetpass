@@ -56,20 +56,26 @@ namespace Forgetpass {
             vbox_key.append(hbox_key);
 
             var box = new Box (Orientation.VERTICAL, 10);
-            box.set_margin_bottom(6);
-            box.set_margin_top(6);
-            box.set_margin_end(6);
-            box.set_margin_start(6);
+            box.vexpand = true;
             box.append(vbox_site);
             box.append(vbox_key);
             box.append(generate_button);
             box.append(generated_pass);
 
+            var clamp = new Adw.Clamp ();
+            clamp.valign = Gtk.Align.CENTER;
+            clamp.tightening_threshold = 100;
+            clamp.margin_top = 10;
+            clamp.margin_bottom = 20;
+            clamp.margin_start = 20;
+            clamp.margin_end = 20;
+            clamp.set_child (box);
+
             var headerbar = new Adw.HeaderBar();
 
             var main_box = new Box (Orientation.VERTICAL, 0);
             main_box.append(headerbar);
-            main_box.append(box);
+            main_box.append(clamp);
             set_content(main_box);
 		}
 		
