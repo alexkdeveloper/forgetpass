@@ -6,11 +6,15 @@ namespace Forgetpass {
         private PasswordEntry generated_pass;
         private PasswordEntry entry_key;
         private Entry entry_site;
+        private Adw.ToastOverlay overlay;
+        private Adw.Toast name_toast;
+        private Adw.Toast keyword_toast;
+
 		public MainWindow (Adw.Application app) {
 			Object (application: app, title: "Forgetpass", default_height: 250, default_width: 300);
 		}
+
 		construct {
-            
 			var label_site = new Label(_("Site:")) { 
                 halign = Gtk.Align.START 
             };
@@ -73,20 +77,28 @@ namespace Forgetpass {
 
             var headerbar = new Adw.HeaderBar();
 
+            overlay = new Adw.ToastOverlay();
+            overlay.set_child(clamp);
+
             var main_box = new Box (Orientation.VERTICAL, 0);
             main_box.append(headerbar);
-            main_box.append(clamp);
+            main_box.append(overlay);
             set_content(main_box);
-		}
+
+            name_toast = new Adw.Toast(_("Enter the name of the site"));
+            name_toast.set_timeout(3);
+            keyword_toast = new Adw.Toast(_("Enter a keyword"));
+            keyword_toast.set_timeout(3);
+	}
 		
 		private void on_generate(){
             if(is_empty(entry_site.text)){
-                alert(_("Enter the name of the site"));
+                overlay.add_toast(name_toast);
                 entry_site.grab_focus();
                 return;
             }
             if(is_empty(entry_key.text)){
-                alert(_("Enter a keyword"));
+                overlay.add_toast(keyword_toast);
                 entry_key.grab_focus();
                 return;
             }
