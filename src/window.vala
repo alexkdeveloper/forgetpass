@@ -105,7 +105,7 @@ namespace Forgetpass {
 		    try {
                   generated_pass.text = Crypto.derive_password(entry_key.text.strip(), entry_site.text.down().strip());
                 } catch (CryptoError error) {
-                    alert(_("ERROR!!!\nFailed to generate password"));
+                    alert(_("ERROR!!!\nFailed to generate password"),"");
                 }
 		}
 
@@ -113,13 +113,17 @@ namespace Forgetpass {
             return str.strip().length == 0;
         }
 
-		private void alert (string str){
-          var dialog_alert = new Gtk.MessageDialog(this, Gtk.DialogFlags.MODAL, Gtk.MessageType.INFO, Gtk.ButtonsType.OK, str);
-          dialog_alert.set_title(_("Message"));
-          dialog_alert.response.connect((_) => { dialog_alert.close(); });
-          dialog_alert.show();
-       }
-	}
+	private void alert (string heading, string body){
+            var dialog_alert = new Adw.MessageDialog(this, heading, body);
+            if (body != "") {
+                dialog_alert.set_body(body);
+            }
+            dialog_alert.add_response("ok", _("_OK"));
+            dialog_alert.set_response_appearance("ok", SUGGESTED);
+            dialog_alert.response.connect((_) => { dialog_alert.close(); });
+            dialog_alert.show();
+        }
+    }
 }
 
 
