@@ -1,0 +1,98 @@
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the forgetpass package.
+#
+# Albano Battistella <albano_battistella@hotmail.com>, 2022.
+# Sergio Varela <sergiovg01@outlook.com>, 2022.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: forgetpass\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-01 14:21+0200\n"
+"PO-Revision-Date: 2022-09-24 17:45+0200\n"
+"Last-Translator: Sergio Varela <sergiovg01@outlook.com>\n"
+"Language-Team: Spanish - Spain <sergiovg01@outlook.com>\n"
+"Language: es_ES\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"X-Generator: Gtranslator 40.0\n"
+
+#: data/com.github.alexkdeveloper.forgetpass.desktop.in:3
+#: data/com.github.alexkdeveloper.forgetpass.appdata.xml.in:6
+msgid "Forgetpass"
+msgstr "Forgetpass"
+
+#: data/com.github.alexkdeveloper.forgetpass.desktop.in:4
+#: data/com.github.alexkdeveloper.forgetpass.appdata.xml.in:7
+msgid "Simple password generator for websites"
+msgstr "Generador de contraseñas sencillo para sitios web"
+
+#: data/com.github.alexkdeveloper.forgetpass.desktop.in:11
+msgid "password;generator;security;keyword;"
+msgstr "contraseña;generador;seguridad;palabra clave;"
+
+#: data/com.github.alexkdeveloper.forgetpass.appdata.xml.in:9
+msgid ""
+"You don't need to remember passwords anymore! All you need is a website name "
+"and a keyword that is easy to remember. The program will generate a strong "
+"password, and if you need it again, just enter the above data and you will "
+"get the same password."
+msgstr ""
+"¡Ya no es necesario recordar contraseñas! Todo lo que necesitas es un nombre "
+"de sitio web y una palabra clave que sea fácil de recordar. El programa "
+"generará una contraseña fuerte, y si la necesitas de nuevo, sólo tienes que "
+"introducir los datos anteriores y obtendrás la misma contraseña."
+
+#: data/com.github.alexkdeveloper.forgetpass.appdata.xml.in:14
+msgid "Alex Kryuchkov"
+msgstr "Alex Kryuchkov"
+
+#: window.vala:14
+msgid "Site:"
+msgstr "Sitio:"
+
+#: window.vala:22
+msgid ""
+"Use only the domain name without prefixes, such as http or www, and endings, "
+"such as .com, etc."
+msgstr ""
+"Utilice sólo el nombre de dominio sin prefijos, como http o www, ni "
+"terminaciones, como .com, etc."
+
+#: window.vala:25
+msgid "Keyword:"
+msgstr "Palabra clave:"
+
+#: window.vala:34
+msgid ""
+"Be sure to remember the keyword! If you forget it, you won't be able to "
+"recover your password!"
+msgstr ""
+"¡Asegúrate de recordar la palabra clave! Si la olvidas, no podrás recuperar "
+"tu contraseña."
+
+#: window.vala:36
+msgid "GENERATE"
+msgstr "GENERAR"
+
+#: window.vala:78
+msgid "Enter the name of the site"
+msgstr "Introduce el nombre del sitio"
+
+#: window.vala:83
+msgid "Enter a keyword"
+msgstr "Introduce una palabra clave"
+
+#: window.vala:90
+msgid ""
+"ERROR!!!\n"
+"Failed to generate password"
+msgstr ""
+"¡¡¡ERROR!!!\n"
+"No se ha podido generar la contraseña"
+
+#: window.vala:100
+msgid "Message"
+msgstr "Mensaje"
