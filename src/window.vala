@@ -39,11 +39,15 @@ namespace Forgetpass {
                 };
             var generate_button = new Button.with_label(_("GENERATE"));
             generated_pass = new PasswordEntry() { 
+                hexpand = true,
                 show_peek_icon = true,
                 editable = false
             };     
+            var copy_button = new Button();
+            copy_button.set_icon_name("edit-copy-symbolic");
 
             generate_button.clicked.connect(on_generate);
+            copy_button.clicked.connect(on_copy);
 
             var hbox_site = new Box (Orientation.HORIZONTAL, 5);
             hbox_site.append (entry_site);
@@ -59,12 +63,16 @@ namespace Forgetpass {
             vbox_key.append(label_key);
             vbox_key.append(hbox_key);
 
+            var hbox_pass = new Box (Orientation.HORIZONTAL, 5);
+            hbox_pass.append (generated_pass);
+            hbox_pass.append (copy_button);
+
             var box = new Box (Orientation.VERTICAL, 10);
             box.vexpand = true;
             box.append(vbox_site);
             box.append(vbox_key);
             box.append(generate_button);
-            box.append(generated_pass);
+            box.append(hbox_pass);
 
             var clamp = new Adw.Clamp ();
             clamp.valign = Gtk.Align.CENTER;
@@ -76,6 +84,7 @@ namespace Forgetpass {
             clamp.set_child (box);
 
             var headerbar = new Adw.HeaderBar();
+            headerbar.add_css_class("flat");
 
             overlay = new Adw.ToastOverlay();
             overlay.set_child(clamp);
@@ -108,7 +117,10 @@ namespace Forgetpass {
                     alert(_("ERROR!!!\nFailed to generate password"),"");
                 }
 		}
-
+        private void on_copy(){
+              var clipboard = Gdk.Display.get_default().get_clipboard();
+              clipboard.set_text(generated_pass.get_text());
+            }
         private bool is_empty(string str){
             return str.strip().length == 0;
         }
