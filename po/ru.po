@@ -16,8 +16,8 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 
 #: window.vala:14
-msgid "Site:"
-msgstr "Сайт:"
+msgid "Site"
+msgstr "Сайт"
 
 #: window.vala:22
 msgid ""
@@ -28,8 +28,8 @@ msgstr ""
 "окончаний, таких как .com и т.д."
 
 #: window.vala:25
-msgid "Keyword:"
-msgstr "Ключевое слово:"
+msgid "Keyword"
+msgstr "Ключевое слово"
 
 #: window.vala:34
 msgid ""

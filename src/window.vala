@@ -4,8 +4,8 @@ using Gtk;
 namespace Forgetpass {
 	public class MainWindow : Adw.ApplicationWindow {
         private PasswordEntry generated_pass;
-        private PasswordEntry entry_key;
-        private Entry entry_site;
+        private Adw.PasswordEntryRow entry_key;
+        private Adw.EntryRow entry_site;
         private Adw.ToastOverlay overlay;
         private Adw.Toast name_toast;
         private Adw.Toast keyword_toast;
@@ -15,30 +15,22 @@ namespace Forgetpass {
 		}
 
 		construct {
-			var label_site = new Label(_("Site:")) { 
-                halign = Gtk.Align.START 
-            };
-            entry_site = new Entry() {
-                hexpand = true
-            };
-            var entry_site_tooltip_image = new Image.from_icon_name("dialog-information-symbolic") { 
-                halign = Gtk.Align.START, 
-                tooltip_text = _("Use only the domain name without prefixes, such as http or www, and endings, such as .com, etc.") 
-                };
+            entry_site = new Adw.EntryRow();
+            entry_site.set_title(_("Site"));
+            entry_site.set_tooltip_text(_("Use only the domain name without prefixes, such as http or www, and endings, such as .com, etc."));
 
-            var label_key = new Label(_("Keyword:")) { 
-                halign = Gtk.Align.START 
-            };
-            entry_key = new PasswordEntry() { 
-                hexpand = true,
-                show_peek_icon = true
-            };
-            var entry_key_tooltip_image = new Image.from_icon_name("dialog-information-symbolic") { 
-                halign = Gtk.Align.START, 
-                tooltip_text = _("Be sure to remember the keyword! If you forget it, you won't be able to recover your password!") 
-                };
+            entry_key = new Adw.PasswordEntryRow();
+            entry_key.set_title(_("Keyword"));
+            entry_key.set_tooltip_text(_("Be sure to remember the keyword! If you forget it, you won't be able to recover your password!"));
+
+            var list = new ListBox();
+             list.add_css_class("boxed-list");
+             list.append(entry_site);
+             list.append(entry_key);
+
             var generate_button = new Button.with_label(_("GENERATE"));
-            generated_pass = new PasswordEntry() { 
+            generate_button.add_css_class("suggested-action");
+            generated_pass = new PasswordEntry() {
                 hexpand = true,
                 show_peek_icon = true,
                 editable = false
@@ -49,28 +41,13 @@ namespace Forgetpass {
             generate_button.clicked.connect(on_generate);
             copy_button.clicked.connect(on_copy);
 
-            var hbox_site = new Box (Orientation.HORIZONTAL, 5);
-            hbox_site.append (entry_site);
-            hbox_site.append (entry_site_tooltip_image);
-            var vbox_site = new Box (Orientation.VERTICAL, 5);
-            vbox_site.append(label_site);
-            vbox_site.append(hbox_site);
-
-            var hbox_key = new Box (Orientation.HORIZONTAL, 5);
-            hbox_key.append (entry_key);
-            hbox_key.append (entry_key_tooltip_image);
-            var vbox_key = new Box (Orientation.VERTICAL, 5);
-            vbox_key.append(label_key);
-            vbox_key.append(hbox_key);
-
             var hbox_pass = new Box (Orientation.HORIZONTAL, 5);
             hbox_pass.append (generated_pass);
             hbox_pass.append (copy_button);
 
             var box = new Box (Orientation.VERTICAL, 10);
             box.vexpand = true;
-            box.append(vbox_site);
-            box.append(vbox_key);
+            box.append(list);
             box.append(generate_button);
             box.append(hbox_pass);
 

@@ -50,8 +50,8 @@ msgid "Alex Kryuchkov"
 msgstr "Alex Kryuchkov"
 
 #: window.vala:14
-msgid "Site:"
-msgstr "Sitio:"
+msgid "Site"
+msgstr "Sitio"
 
 #: window.vala:22
 msgid ""
@@ -62,8 +62,8 @@ msgstr ""
 "terminaciones, como .com, etc."
 
 #: window.vala:25
-msgid "Keyword:"
-msgstr "Palabra clave:"
+msgid "Keyword"
+msgstr "Palabra clave"
 
 #: window.vala:34
 msgid ""
