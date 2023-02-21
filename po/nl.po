@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: forgetpass\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-05-01 14:21+0200\n"
-"PO-Revision-Date: 2022-05-01 14:30+0200\n"
+"POT-Creation-Date: 2023-02-21 13:12+0100\n"
+"PO-Revision-Date: 2023-02-21 13:16+0100\n"
 "Last-Translator: Heimen Stoffels <vistausss@fastmail.com>\n"
 "Language-Team: Dutch <kde-i18n-nl@kde.org>\n"
 "Language: nl_NL\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 22.04.0\n"
+"X-Generator: Poedit 3.2.2\n"
 
 #: data/com.github.alexkdeveloper.forgetpass.desktop.in:3
 #: data/com.github.alexkdeveloper.forgetpass.appdata.xml.in:6
@@ -28,8 +28,8 @@ msgid "Simple password generator for websites"
 msgstr "Eenvoudige wachtwoordgenerator voor websites"
 
 #: data/com.github.alexkdeveloper.forgetpass.desktop.in:11
-msgid "password;generator;security;keyword;"
-msgstr "wachtwoord;generator;beveiliging;trefwoord;"
+msgid "Password;Manager;Security;Generate;Derive;"
+msgstr "Wachtwoord;Beheer;Beveiliging;Genereren;Afleiden;"
 
 #: data/com.github.alexkdeveloper.forgetpass.appdata.xml.in:9
 msgid ""
@@ -38,12 +38,115 @@ msgid ""
 "password, and if you need it again, just enter the above data and you will "
 "get the same password."
 msgstr ""
-"U hoeft vanaf nu geen wachtwoorden meer te onthouden! Het enige wat u nodig"
-" heeft is de "
-"naam van een website en makkelijk te onthouden trefwoord. De toepassing"
-" genereert vervolgens "
-"een sterk wachtwoord dat u kunt opvragen middels het gekozen trefwoord."
+"U hoeft vanaf nu geen wachtwoorden meer te onthouden! Het enige wat u nodig "
+"heeft is de naam van een website en makkelijk te onthouden trefwoord. De "
+"toepassing genereert vervolgens een sterk wachtwoord dat u kunt opvragen "
+"middels het gekozen trefwoord."
 
 #: data/com.github.alexkdeveloper.forgetpass.appdata.xml.in:14
 msgid "Alex Kryuchkov"
 msgstr "Alex Kryuchkov"
+
+#: data/com.github.alexkdeveloper.forgetpass.appdata.xml.in:28
+#: data/com.github.alexkdeveloper.forgetpass.appdata.xml.in:84
+msgid "Minor UI update"
+msgstr "Verbeterd: vormgeving"
+
+#: data/com.github.alexkdeveloper.forgetpass.appdata.xml.in:35
+msgid "Updated Italian translation"
+msgstr "Bijgewerkt: Italiaanse vertaling"
+
+#: data/com.github.alexkdeveloper.forgetpass.appdata.xml.in:42
+msgid "Port to AdwEntryRow"
+msgstr "Nieuw: gemigreerd naar AdwEntryRow"
+
+#: data/com.github.alexkdeveloper.forgetpass.appdata.xml.in:49
+msgid "Added the ability to copy the password to the clipboard"
+msgstr "Nieuw: mogelijkheid om wachtwoord te kopiëren naar klembord"
+
+#: data/com.github.alexkdeveloper.forgetpass.appdata.xml.in:56
+msgid "The app icon has been updated"
+msgstr "Bijgewerkt: toepassingspictogram"
+
+#: data/com.github.alexkdeveloper.forgetpass.appdata.xml.in:63
+msgid "Added Spanish and Basque translations"
+msgstr "Nieuw: Spaanse en Baskische vertalingen"
+
+#: data/com.github.alexkdeveloper.forgetpass.appdata.xml.in:70
+msgid "Update to GNOME Platform version 43"
+msgstr "Bijgewerkt: GNOME-platform naar versie 43"
+
+#: data/com.github.alexkdeveloper.forgetpass.appdata.xml.in:77
+msgid "Pop-up messages were introduced"
+msgstr "Nieuw: pop-upmeldingen"
+
+#: data/com.github.alexkdeveloper.forgetpass.appdata.xml.in:91
+msgid "Added Italian translation"
+msgstr "Nieuw: Italiaanse vertaling"
+
+#: data/com.github.alexkdeveloper.forgetpass.appdata.xml.in:92
+msgid "Added Russian translation"
+msgstr "Nieuw: Russische vertaling"
+
+#: data/com.github.alexkdeveloper.forgetpass.appdata.xml.in:99
+msgid "Libadwaita is included in the application"
+msgstr "Nieuw: Libadwaita wordt voorgaan meegeleverd"
+
+#: data/com.github.alexkdeveloper.forgetpass.appdata.xml.in:106
+msgid "Added Dutch translation"
+msgstr "Nieuw: Nederlandse vertaling"
+
+#: data/com.github.alexkdeveloper.forgetpass.appdata.xml.in:113
+msgid "Initial release"
+msgstr "Eerste versie"
+
+#: src/window.vala:27
+msgid "Site"
+msgstr "Website"
+
+#: src/window.vala:28
+msgid ""
+"Use only the domain name without prefixes, such as http or www, and endings, "
+"such as .com, etc."
+msgstr ""
+"Let op: voer alléén de domeinnaam in, zonder voorvoegsels als http of www en "
+"zonder achtervoegsels als .nl of .com."
+
+#: src/window.vala:39
+msgid "Keyword"
+msgstr "Trefwoord"
+
+#: src/window.vala:40
+msgid ""
+"Be sure to remember the keyword! If you forget it, you won't be able to "
+"recover your password!"
+msgstr ""
+"Let op: onthoud dit trefwoord goed! Als u het woord vergeet, dan kunt u uw "
+"wachtwoord niet herstellen!"
+
+#: src/window.vala:60
+msgid "GENERATE"
+msgstr "GENEREREN"
+
+#: src/window.vala:104
+msgid "Enter the name of the site"
+msgstr "Voer de naam van de website in"
+
+#: src/window.vala:106
+msgid "Enter a keyword"
+msgstr "Voer een trefwoord in"
+
+#: src/window.vala:134
+msgid ""
+"ERROR!!!\n"
+"Failed to generate password"
+msgstr ""
+"FOUTMELDING!!!\n"
+"Het wachtwoord kan niet worden gegenereerd"
+
+#: src/window.vala:150
+msgid "_OK"
+msgstr "_Oké"
+
+#~ msgid "password;generator;security;keyword;"
+#~ msgstr "wachtwoord;generator;beveiliging;trefwoord;"
