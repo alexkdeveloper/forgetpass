@@ -12,95 +12,99 @@
     <binary>com.github.alexkdeveloper.forgetpass</binary>
   </provides>
   <developer_name>Alex Kryuchkov</developer_name>
-  <url type="homepage">http://github.com/alexkdeveloper/forgetpass</url>
-  <url type="bugtracker">http://github.com/alexkdeveloper/forgetpass/issues</url>
-  <url type="help">http://github.com/alexkdeveloper/forgetpass/issues</url>
+  <url type="homepage">https://github.com/alexkdeveloper/forgetpass</url>
+  <url type="bugtracker">https://github.com/alexkdeveloper/forgetpass/issues</url>
+  <url type="help">https://github.com/alexkdeveloper/forgetpass/issues</url>
+  <url type="vcs-browser">https://github.com/alexkdeveloper/forgetpass</url>
+  <url type="translate">https://github.com/alexkdeveloper/forgetpass/tree/main/po</url>
   <screenshots>
     <screenshot type="default">
     <image>https://raw.githubusercontent.com/alexkdeveloper/forgetpass/main/data/screenshot.png</image>
     </screenshot>
   </screenshots>
   <content_rating type="oars-1.1"/>
+  <translation type="gettext">com.github.alexkdeveloper.forgetpass</translation>
+  <launchable type="desktop-id">com.github.alexkdeveloper.forgetpass.desktop</launchable>
   <releases>
      <release version="1.0.14" date="2023-09-22">
-      <description>
+      <description translatable="no">
 	 <ul>
 	   <li>Updated to GNOME Platform version 45</li>
 	</ul>
      </description>
     </release>
      <release version="1.0.13" date="2023-03-22">
-      <description>
+      <description translatable="no">
 	 <ul>
 	   <li>Updated to GNOME Platform version 44</li>
 	</ul>
      </description>
     </release>
     <release version="1.0.12" date="2023-02-20">
-      <description>
+      <description translatable="no">
 	 <ul>
 	   <li>Minor UI update</li>
 	</ul>
      </description>
     </release>
     <release version="1.0.11" date="2023-01-24">
-      <description>
+      <description translatable="no">
 	 <ul>
            <li>Updated Italian translation</li>
 	</ul>
      </description>
     </release>
     <release version="1.0.10" date="2023-01-05">
-      <description>
+      <description translatable="no">
 	 <ul>
            <li>Port to AdwEntryRow</li>
 	</ul>
      </description>
     </release>
     <release version="1.0.9" date="2022-10-26">
-      <description>
+      <description translatable="no">
 	 <ul>
            <li>Added the ability to copy the password to the clipboard</li>
 	</ul>
      </description>
     </release>
     <release version="1.0.8" date="2022-10-03">
-      <description>
+      <description translatable="no">
 	 <ul>
            <li>The app icon has been updated</li>
 	</ul>
      </description>
     </release>
      <release version="1.0.7" date="2022-09-26">
-      <description>
+      <description translatable="no">
 	 <ul>
            <li>Added Spanish and Basque translations</li>
 	</ul>
      </description>
     </release>
      <release version="1.0.6" date="2022-09-24">
-      <description>
+      <description translatable="no">
 	 <ul>
            <li>Update to GNOME Platform version 43</li>
 	</ul>
      </description>
     </release>
     <release version="1.0.5" date="2022-06-28">
-      <description>
+      <description translatable="no">
 	 <ul>
            <li>Pop-up messages were introduced</li>
 	</ul>
      </description>
     </release>
     <release version="1.0.4" date="2022-06-20">
-      <description>
+      <description translatable="no">
 	 <ul>
            <li>Minor UI update</li>
 	</ul>
      </description>
     </release>
   <release version="1.0.3" date="2022-06-09">
-      <description>
+      <description translatable="no">
 	 <ul>
            <li>Added Italian translation</li>
 	   <li>Added Russian translation</li>
@@ -108,21 +112,21 @@
      </description>
     </release>
   <release version="1.0.2" date="2022-06-08">
-      <description>
+      <description translatable="no">
 	  <ul>
             <li>Libadwaita is included in the application</li>
 	  </ul>
      </description>
     </release>
    <release version="1.0.1" date="2022-05-17">
-      <description>
+      <description translatable="no">
 	<ul>
            <li>Added Dutch translation</li>
 	</ul>
      </description>
     </release>
     <release version="1.0.0" date="2022-04-29">
-      <description>
+      <description translatable="no">
        <ul>
           <li>Initial release</li>
        </ul>
