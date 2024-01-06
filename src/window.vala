@@ -67,6 +67,7 @@ namespace Forgetpass {
             };     
             var copy_button = new Button();
             copy_button.set_icon_name("edit-copy-symbolic");
+            copy_button.set_tooltip_text(_("Copy password"));
 
             generate_button.clicked.connect(on_generate);
             copy_button.clicked.connect(on_copy);
