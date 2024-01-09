@@ -1,0 +1,102 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-01-06 16:02+0300\n"
+"PO-Revision-Date: 2024-01-09 16:44+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: be\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.4\n"
+
+#: data/com.github.alexkdeveloper.forgetpass.desktop.in:3
+#: data/com.github.alexkdeveloper.forgetpass.appdata.xml.in:6
+msgid "Forgetpass"
+msgstr "Forgetpass"
+
+#: data/com.github.alexkdeveloper.forgetpass.desktop.in:4
+#: data/com.github.alexkdeveloper.forgetpass.appdata.xml.in:7
+msgid "Simple password generator for websites"
+msgstr "Просты генератар пароляў для сайтаў"
+
+#: data/com.github.alexkdeveloper.forgetpass.desktop.in:11
+msgid "Password;Manager;Security;Generate;Derive;"
+msgstr ""
+"Password;Manager;Security;Generate;Derive;Пароль; Менеджэр; Бяспека; "
+"Стварыць; Вывесці;"
+
+#: data/com.github.alexkdeveloper.forgetpass.appdata.xml.in:9
+msgid ""
+"You don't need to remember passwords anymore! All you need is a website name "
+"and a keyword that is easy to remember. The program will generate a strong "
+"password, and if you need it again, just enter the above data and you will "
+"get the same password."
+msgstr ""
+"Вам больш не трэба запамінаць паролі! Усё, што вам трэба, гэта назва вэб-"
+"сайта і ключавое слова, якое лёгка запомніць. Праграма згенеруе надзейны "
+"пароль, і калі ён вам спатрэбіцца зноў, проста ўвядзіце даныя вышэй, і вы "
+"атрымаеце той жа пароль."
+
+#: data/com.github.alexkdeveloper.forgetpass.appdata.xml.in:14
+msgid "Alex Kryuchkov"
+msgstr "Alex Kryuchkov"
+
+#: src/window.vala:27
+msgid "Site"
+msgstr "Сайт"
+
+#: src/window.vala:28
+msgid ""
+"Use only the domain name without prefixes, such as http or www, and endings, "
+"such as .com, etc."
+msgstr ""
+"Выкарыстоўвайце толькі даменнае імя без прэфіксаў, напрыклад http або www, і "
+"канчаткаў, такіх як .com і г.д."
+
+#: src/window.vala:39
+msgid "Keyword"
+msgstr "Ключавое слова"
+
+#: src/window.vala:40
+msgid ""
+"Be sure to remember the keyword! If you forget it, you won't be able to "
+"recover your password!"
+msgstr ""
+"Абавязкова запомніце ключавое слова! Калі вы забудзеце яго, вы не зможаце "
+"аднавіць пароль!"
+
+#: src/window.vala:60
+msgid "GENERATE"
+msgstr "СТВАРЫЦЬ"
+
+#: src/window.vala:70
+msgid "Copy password"
+msgstr "Скапіраваць пароль"
+
+#: src/window.vala:106
+msgid "Enter the name of the site"
+msgstr "Увядзіце назву сайта"
+
+#: src/window.vala:108
+msgid "Enter a keyword"
+msgstr "Увядзіце ключавое слова"
+
+#: src/window.vala:136
+msgid ""
+"ERROR!!!\n"
+"Failed to generate password"
+msgstr ""
+"ПАМЫЛКА!!!\n"
+"Не ўдалося стварыць пароль"
+
+#: src/window.vala:152
+msgid "_OK"
+msgstr "_ОК"
