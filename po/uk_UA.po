@@ -1,0 +1,104 @@
+# Ukrainian translation for Forgetpass.
+# Copyright (C) 2024 THE Forgetpass'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the Forgetpass package.
+# volkov <volkovissocool@gmail.com>, 2024.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Forgetpass\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-01-06 16:02+0300\n"
+"PO-Revision-Date: 2024-01-09 20:20+0200\n"
+"Last-Translator: volkov <volkovissocool@gmail.com>\n"
+"Language-Team: volkov <volkovissocool@gmail.com>\n"
+"Language: uk_UA\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
+"X-Generator: Poedit 3.4\n"
+
+#: data/com.github.alexkdeveloper.forgetpass.desktop.in:3
+#: data/com.github.alexkdeveloper.forgetpass.appdata.xml.in:6
+msgid "Forgetpass"
+msgstr ""
+
+#: data/com.github.alexkdeveloper.forgetpass.desktop.in:4
+#: data/com.github.alexkdeveloper.forgetpass.appdata.xml.in:7
+msgid "Simple password generator for websites"
+msgstr "Простий генератор паролів для веб-сайтів"
+
+#: data/com.github.alexkdeveloper.forgetpass.desktop.in:11
+msgid "Password;Manager;Security;Generate;Derive;"
+msgstr ""
+"Password;Manager;Security;Generate;Derive;пароль;безпека;генерувати;створити;"
+"згадати;сайт;менеджер;пассворд;секрет;"
+
+#: data/com.github.alexkdeveloper.forgetpass.appdata.xml.in:9
+msgid ""
+"You don't need to remember passwords anymore! All you need is a website name "
+"and a keyword that is easy to remember. The program will generate a strong "
+"password, and if you need it again, just enter the above data and you will "
+"get the same password."
+msgstr ""
+"Вам не потрібно більше запам'ятовувати паролі! Все що вам треба - назва "
+"сайту і ключове слово які легко запам'ятати. Програма згенерує надійний "
+"пароль, і якщо вам знову знадобиться, просто введіть ці дані знову і ви "
+"отримаєте той же пароль."
+
+#: data/com.github.alexkdeveloper.forgetpass.appdata.xml.in:14
+msgid "Alex Kryuchkov"
+msgstr ""
+
+#: src/window.vala:27
+msgid "Site"
+msgstr "Сайт"
+
+#: src/window.vala:28
+msgid ""
+"Use only the domain name without prefixes, such as http or www, and endings, "
+"such as .com, etc."
+msgstr ""
+"Використовуйте тільки назву домену без префіксів як http або www, і без "
+"закінченнь як .com"
+
+#: src/window.vala:39
+msgid "Keyword"
+msgstr "Ключове слово"
+
+#: src/window.vala:40
+msgid ""
+"Be sure to remember the keyword! If you forget it, you won't be able to "
+"recover your password!"
+msgstr ""
+"Запам'ятайте це ключове слово! Якщо ви його забудете, ви не зможете "
+"відновити пароль!"
+
+#: src/window.vala:60
+msgid "GENERATE"
+msgstr "ЗГЕНЕРУВАТИ"
+
+#: src/window.vala:70
+msgid "Copy password"
+msgstr "Скопіювати пароль"
+
+#: src/window.vala:106
+msgid "Enter the name of the site"
+msgstr "Введіть назву сайту"
+
+#: src/window.vala:108
+msgid "Enter a keyword"
+msgstr "Введіть ключове слово"
+
+#: src/window.vala:136
+msgid ""
+"ERROR!!!\n"
+"Failed to generate password"
+msgstr ""
+"Помилка!\n"
+"Не вдалося згенерувати пароль"
+
+#: src/window.vala:152
+msgid "_OK"
+msgstr "_Добре"
