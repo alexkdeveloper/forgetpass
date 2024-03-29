@@ -26,6 +26,13 @@
   <translation type="gettext">com.github.alexkdeveloper.forgetpass</translation>
   <launchable type="desktop-id">com.github.alexkdeveloper.forgetpass.desktop</launchable>
   <releases>
+    <release version="1.0.17" date="2024-03-29">
+      <description translatable="no">
+	 <ul>
+	   <li>Updated Dutch translation</li>
+	</ul>
+     </description>
+    </release>
     <release version="1.0.16" date="2024-03-24">
       <description translatable="no">
 	 <ul>
