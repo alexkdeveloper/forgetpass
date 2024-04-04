@@ -12,6 +12,9 @@
     <binary>com.github.alexkdeveloper.forgetpass</binary>
   </provides>
   <developer_name>Alex Kryuchkov</developer_name>
+  <developer id="io.github.alexkdeveloper">
+    <name>Alex Kryuchkov</name>
+  </developer>
   <url type="homepage">https://github.com/alexkdeveloper/forgetpass</url>
   <url type="bugtracker">https://github.com/alexkdeveloper/forgetpass/issues</url>
   <url type="help">https://github.com/alexkdeveloper/forgetpass/issues</url>
